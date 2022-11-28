@@ -1,0 +1,50 @@
+CREATE database S7KTW0;
+
+create table Eszkozgyarto (
+gyarto_id INT Primary Key,
+nev char(20),
+eszkoz char(20));
+
+create table Szolgaltatas (
+szolg_id INT Primary Key,
+nev char(20),
+ar INT,
+technologia char(20),
+gyarto_id INT REFERENCES Eszkozgyarto);
+
+create table Ugyfel (
+ugyfel_id INT Primary Key,
+nev char(20),
+szul_ev date,
+ugyfelszint char(8),
+irsz INT,
+varos char(20),
+kozterulet char(20),
+hazszam INT);
+
+create table Mentor (
+mentor_id INT Primary Key,
+nev char(20));
+
+create table Dolgozo (
+dolgozo_id INT Primary Key,
+nev char(20),
+szul_ev date,
+beosztas char(20),
+mentor_id INT References Mentor);
+
+create table Mentor_elerhetoseg (
+elerhetoseg char(20),
+mentor_id INT References Mentor);
+
+create table Vasarol (
+ugyfel_id INT References Ugyfel,
+szolg_id INT References Szolgaltatas);
+
+create table Ertekesit (
+szolg_id INT References Szolgaltatas,
+dolgozo_id INT References Dolgozo);
+
+create table Tole_vasarol (
+ugyfel_id INT References Ugyfel,
+dolgozo_id INT References Dolgozo);

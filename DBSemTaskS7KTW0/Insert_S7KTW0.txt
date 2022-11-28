@@ -1,0 +1,83 @@
+INSERT INTO Eszkozgyarto VALUES (1, 'Wire', 'STB');
+INSERT INTO Eszkozgyarto VALUES (2, 'Telnet', 'HGW');
+INSERT INTO Eszkozgyarto VALUES (3, 'Axiom', 'SmartWIFI');
+INSERT INTO Eszkozgyarto VALUES (4, 'Skylines', 'Mobil eszköz');
+
+INSERT INTO Szolgaltatas VALUES (1 , 'Családi Mobil', 10000, 'mobil', 4);
+INSERT INTO Szolgaltatas VALUES (2 , 'Otthoni Net 1000', 3500, 'optika', 2);
+INSERT INTO Szolgaltatas VALUES (3 , 'Otthoni Net 500', 3000, 'koax', 2);
+INSERT INTO Szolgaltatas VALUES (4 , 'Otthoni Net 20', 2500, 'réz', 2);
+INSERT INTO Szolgaltatas VALUES (5 , 'TV Alap', 2500, 'optika', 1);
+INSERT INTO Szolgaltatas VALUES (6 , 'TV Extra', 4000, 'optika', 1);
+INSERT INTO Szolgaltatas VALUES (7 , 'Wifi-XXL', 1500, 'optika', 3);
+INSERT INTO Szolgaltatas VALUES (8 , 'Családi Mobil', 1000, 'mobil', 4);
+
+INSERT INTO Ugyfel VALUES ( 1, 'Kiss Barnabás', '1995-05-06', 'kék', 3562, 'Encs', 'Szentháromság utca', 8);
+INSERT INTO Ugyfel VALUES ( 2, 'Kerekes János', '2000-10-28', 'arany', 2523, 'Miskolc', 'Sarolta utca', 10);
+INSERT INTO Ugyfel VALUES ( 3, 'Tamás Bence', '1950-12-30', 'kék', 2542, 'Sajószentpéter', 'Rublika tér', 103);
+INSERT INTO Ugyfel VALUES ( 4, 'Magyar Gergő', '1980-11-20', 'platina', 1212, 'Budapest', 'Andor utca', 25);
+INSERT INTO Ugyfel VALUES ( 5, 'Kiss Panna', '2000-11-04', 'arany', 3052, 'Kafa', 'Baross Gábor út', 2);
+INSERT INTO Ugyfel VALUES ( 6, 'Csáki Csilla', '1956-11-14', 'kék', 1252, 'Fenyőboros', 'Báthory sor', 14);
+INSERT INTO Ugyfel VALUES ( 7, 'Csepregi Zsuzsanna', '1975-09-12', 'kék', 1111, 'Maglód', 'Erenyő utca', 12);
+INSERT INTO Ugyfel VALUES ( 8, 'Kossuth Hanna', '2001-02-03', 'arany', 2523, 'Nagykinizs', 'Kossuth utca', 105);
+INSERT INTO Ugyfel VALUES ( 9, 'Rácz Edina', '1985-05-25', 'platina', 1415, 'Budapest', 'Jámbor utca', 107);
+INSERT INTO Ugyfel VALUES ( 10, 'Tarr András', '1999-06-28', 'kék', 2523, 'Pereces', 'Bogas tér', 45);
+INSERT INTO Ugyfel VALUES ( 11, 'Egri Tas', '1950-11-30', 'arany', 2527, 'Győr', 'Sor utca', 11);
+INSERT INTO Ugyfel VALUES ( 12, 'Jakab Cecília', '1947-10-25', 'platina', 1419, 'Budapest', 'Kálvin tér', 145);
+
+INSERT INTO Mentor Values (1, 'Gölöncsér Dominik');
+INSERT INTO Mentor Values (2, 'Péter Roland');
+INSERT INTO Mentor Values (3, 'György Rebeka');
+INSERT INTO Mentor Values (4, 'Nagy Dóra');
+INSERT INTO Mentor Values (5, 'Szigethy Szilveszter');
+
+INSERT INTO Dolgozo VALUES ( 1, 'Balla Noémi', '1985-11-04', 'D2D', 4);
+INSERT INTO Dolgozo VALUES ( 2, 'Kováts Dániel', '1998-09-18', 'Üzlet', 5);
+INSERT INTO Dolgozo VALUES ( 3, 'Szepesi Orsolya', '1999-10-14', 'D2D', 2);
+INSERT INTO Dolgozo VALUES ( 4, 'Fehér Emma', '2002-04-02', 'CC', 1);
+INSERT INTO Dolgozo VALUES ( 5, 'Havas Gyula', '1995-02-28', 'szerelo', 3);
+
+INSERT INTO Mentor_elerhetoseg VALUES ( 'BHD-4528 Mellék', 1);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'golcsdo123@gmail.com', 1);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'BHD-2000 Mellék', 2);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'petike@gmail.com', 2);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'BHD-2025 Mellék', 3);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'szeporsi02@gmail.com', 3);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'BHD-4638 Mellék', 4);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'emma1122@gmail.com', 4);
+INSERT INTO Mentor_elerhetoseg VALUES ( 'BHD-1514 Mellék', 5);
+
+INSERT INTO Vasarol VALUES ( 1, 5);
+INSERT INTO Vasarol VALUES ( 2, 6);
+INSERT INTO Vasarol VALUES ( 3, 2);
+INSERT INTO Vasarol VALUES ( 4, 1);
+INSERT INTO Vasarol VALUES ( 5, 5);
+INSERT INTO Vasarol VALUES ( 6, 6);
+INSERT INTO Vasarol VALUES ( 7, 8);
+INSERT INTO Vasarol VALUES ( 8, 7);
+INSERT INTO Vasarol VALUES ( 9, 3);
+INSERT INTO Vasarol VALUES ( 10, 5);
+INSERT INTO Vasarol VALUES ( 11, 4);
+INSERT INTO Vasarol VALUES ( 12, 4);
+
+INSERT INTO Ertekesit VALUES ( 1, 2);
+INSERT INTO Ertekesit VALUES ( 2, 1);
+INSERT INTO Ertekesit VALUES ( 3, 3);
+INSERT INTO Ertekesit VALUES ( 4, 1);
+INSERT INTO Ertekesit VALUES ( 5, 4);
+INSERT INTO Ertekesit VALUES ( 6, 1);
+INSERT INTO Ertekesit VALUES ( 7, 1);
+INSERT INTO Ertekesit VALUES ( 8, 3);
+
+INSERT INTO Tole_vasarol VALUES ( 1, 1);
+INSERT INTO Tole_vasarol VALUES ( 2, 4);
+INSERT INTO Tole_vasarol VALUES ( 3, 1);
+INSERT INTO Tole_vasarol VALUES ( 4, 4);
+INSERT INTO Tole_vasarol VALUES ( 5, 3);
+INSERT INTO Tole_vasarol VALUES ( 6, 1);
+INSERT INTO Tole_vasarol VALUES ( 7, 3);
+INSERT INTO Tole_vasarol VALUES ( 8, 1);
+INSERT INTO Tole_vasarol VALUES ( 9, 2);
+INSERT INTO Tole_vasarol VALUES ( 10, 4);
+INSERT INTO Tole_vasarol VALUES ( 11, 1);
+INSERT INTO Tole_vasarol VALUES ( 12, 2);

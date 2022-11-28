@@ -1,0 +1,19 @@
+SELECT nev, ugyfelszint FROM Ugyfel;
+
+SELECT nev, beosztas FROM Dolgozo;
+
+SELECT nev FROM Szolgaltatas WHERE ar > 3000;
+
+SELECT nev, irsz, varos, kozterulet, hazszam FROM Ugyfel WHERE irsz = 2523;
+
+SELECT nev, ar, technologia FROM Szolgaltatas WHERE ar = (SELECT MAX(ar) from Szolgaltatas);
+
+SELECT AVG(ar) FROM Szolgaltatas;
+
+SELECT Dolgozo.nev, Mentor.nev FROM Dolgozo INNER JOIN Mentor ON Dolgozo.mentor_id = Mentor.mentor_id ORDER BY Dolgozo.nev;
+
+SELECT nev, ar FROM Szolgaltatas WHERE technologia = 'optika';
+
+SELECT Szolgaltatas.nev, Eszkozgyarto.nev FROM Szolgaltatas INNER JOIN Eszkozgyarto ON Szolgaltatas.gyarto_id = Eszkozgyarto.gyarto_id ORDER BY Szolgaltatas.nev;
+
+SELECT nev, szul_ev FROM Dolgozo WHERE szul_ev > '1998-01-01';
